@@ -1,0 +1,119 @@
+
+/* --- Service Offer ---  */
+
+.srcv-offer-wrapper {
+  max-width: 1200px;
+  margin: 2.5em auto 0 auto;
+}
+.srvc-offer-boxer {
+  border: 2px #555 solid;
+  overflow: hidden;
+  background: #111419;
+  border-radius: 12px;
+  box-shadow: 0 -4px 12px rgba(240, 240, 240, 0.2),
+    0 4px 12px rgba(240, 240, 240, 0.2);
+  padding: 20px;
+}
+.srvc-offer-box1 {
+  width: 300px;
+  background: #144a4d;
+  border-radius: 8px;
+  box-shadow: 0 -2px 10px rgba(189, 196, 195, 0.37),
+    0 2px 10px rgba(189, 196, 195, 0.37);
+  margin-right: 20px;
+  padding: 0.8em;
+}
+.srvc-offer-box1 li {
+  font-size: 1.1em;
+  margin-top: 0.7em;
+}
+.srvc-offer-box1 li a[data-file] {
+  outline: none;
+  padding: 0.3em 0.5em 0.2em;
+  border-radius: 8px;
+  resize: none;
+  color: rgb(223, 223, 223);
+}
+.srvc-offer-box1 li a.active {
+  background-color: rgb(223, 223, 223);
+  color: rgb(20, 20, 20);
+  transition: all 0.18s ease-in;
+}
+.srvc-offer-box1 li:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.srvc-offer-box2 {
+  flex: 1;
+  padding: 10px 10px 10px 0;
+  opacity: 0.92;
+}
+
+.title {
+  font-size: 1.82em;
+}
+
+.para {
+  line-height: 1.7em;
+  margin-block: 1em;
+}
+
+.list-boxer {
+  padding-left: 20px;
+}
+.list-boxer .list-item {
+  list-style-type: square;
+  margin-top: 0.8em;
+}
+
+.list-item::marker {
+  color: rgb(from whitesmoke r g b);
+}
+
+@media screen and (max-width: 767px) {
+  .flex-controller-md {
+    justify-content: center !important;
+  }
+  .srvc-offer-boxer {
+    display: block !important;
+    margin-inline: 2em;
+  }
+  .srvc-offer-boxer .srvc-offer-box1 {
+    display: flex;
+    margin: auto;
+    /* width: 90.5%; */
+    /* max-width: 90.5%; */
+    width: 100%;
+    padding: 1.3em;
+    margin-bottom: .8em;
+  }
+  .title {
+    font-size: 26px;
+  }
+
+  .srvc-offer-box1 {padding: 0.5em !important;}
+  .srvc-offer-box1 ul {padding: 0em !important;}
+  .srvc-offer-box1 li > a {
+    font-style: italic;
+    font-size: 1rem !important;
+    letter-spacing: 0.1vw;
+  }
+  .srvc-offer-box2 {padding-inline: 0.5em;}
+}
+
+@media screen and (max-width: 480px) {
+
+  .srvc-offer-main-title {
+    font-size: 26px;
+  }
+  .srvc-offer-boxer {
+    margin-inline: 1em !important;
+  }
+  .flex-controller-sm {
+    justify-content: center !important;
+    margin-inline: 1em !important;
+  }
+  .title {
+    font-size: 22px !important;
+  }
+}

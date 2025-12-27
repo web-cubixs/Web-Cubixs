@@ -1,0 +1,105 @@
+/* --- C  O  P  Y      T  H  E  S  E  S  Y  N  T  A  X  E  S --- */
+
+/* Global CSS */
+
+/* --- Opacity --- */
+  .opac-8 {opacity: 0.8;}
+  .opac-7 {opacity: 0.7;}
+  .opac-4 {opacity: 0.4;}
+
+/* --- Displays ---  */
+  .d-inline {display: inline;}
+  .d-in-block {display: inline-block;}
+  .d-block {display: block !important;}
+  .d-flex {display: flex;}
+  .d-in-flex {display: inline-flex;}
+  .d-grid {display: grid;}
+  .d-none {display: none;}
+  
+/* --- Displays Model --- */
+
+  /* Flex  */
+  .flex-y {flex-direction: column;}
+  .flex-x {flex-direction: row;}
+  .flex-a-start {align-items: start;}
+  .flex-a-center {align-items: center;}
+  .flex-a-end {align-items: end;}
+  .flex-jc-start {justify-content: start;}
+  .flex-jc-center {justify-content: center;}
+  .flex-jc-end {justify-content: end;}
+  .flex-jc-bw {justify-content: space-between;}
+  .flex-jc-ar {justify-content: space-around;}
+  .flex-jc-even {justify-content: space-evenly;}
+  .flex-wrap {flex-wrap: wrap;}
+  .flex-nowrap {flex-wrap: nowrap;}
+  .self-center {align-self: center;}
+
+  /* Basis */
+  .base-1 { flex-basis: 10%; }
+  .base-2 { flex-basis: 20%; }
+  .base-25 { flex-basis: 25%; }
+  .base-3 { flex-basis: 30%; }
+  .base-4 { flex-basis: 40%; }
+  .base-5 { flex-basis: 50%; }
+  .base-6 { flex-basis: 60%; }
+  .base-7 { flex-basis: 70%; }
+  .base-75 { flex-basis: 75%; }
+  .base-8 { flex-basis: 80%; }
+  .base-9 { flex-basis: 90%; }
+  .base-10 { flex-basis: 100%; }
+
+  /* Grid  */
+
+
+/* --- Dimensions --- */
+  .h-2px {height: 2px}
+  .h-2em {height: 2em;}
+  .w-2em {width: 2em;}
+
+/* --- Distances / Spaces --- */
+  .__marg-30px {margin-left: 30px;}
+
+
+/* --- Directions --- */
+  .n-left {text-align: left;}
+  .n-right {text-align: right;}
+  .n-center {text-align: center;}
+
+/* --- Fonts --- */
+
+ .f-14px {font-size: 14px;}
+
+ /* ---  Font Lightning--- */
+  .fw-bold {font-weight: bold;}
+  .fw-500 {font-weight: 500;}
+  .fw-600 {font-weight: 600;}
+  .fw-700 {font-weight: 700;}
+
+/* --- Lists --- */
+  .ls-circle {list-style-type: circle;}
+  .ls-none {list-style-type: none;}
+
+/* --- Text Styles --- */
+  .no-decoration {text-decoration: none;}
+  .no-dec {text-decoration: none;}
+
+/* --- Mouse --- */
+  .cur-pointer {cursor: pointer;}
+
+/* --- Positions --- */
+  .pos-absolute {position: absolute;}
+  .pos-relative {position: relative;}
+  .pos-fixed {position: fixed;}
+  .pos-sticky {position: sticky;}
+  
+/* --- Overflows --- */
+.overflow-hide {overflow: hidden;}
+.overflow-hide-y {overflow-y: hidden;}
+.overflow-hide-x {overflow-x: hidden;}
+/* .hide-y-overflow {overflow-y: hidden;}
+.hide-x-overflow {overflow-x: hidden;} */
+
+/* --- Object fitness --- */
+.fit-cover {object-fit: cover;}
+.fit-fill {object-fit: fill;}
+.fit-contain {object-fit: contain;}

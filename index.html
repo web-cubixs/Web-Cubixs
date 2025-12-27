@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Cubixs mine</title>
+  <link rel="stylesheet" href="mycss/global.css">
+  <link rel="stylesheet" href="mycss/nav.css">
+  <link rel="stylesheet" href="mycss/motion.css">
+  <link rel="stylesheet" href="mycss/hero.css">
+  <link rel="stylesheet" href="mycss/service_offer.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-boxer d-flex flex-jc-center pos-relative" style="padding: 1.2em; border-bottom: 0.5px rgba(83, 82, 82, 0.5) solid">
+      <div class="logo-boxer pos-absolute" style="left: 50px; top: 10px; ">
+        <img class="fit-cover" src="Media/logo.png" alt="logo" style="height: 52px; width: 52px;" />
+      </div>
+      <div class="menu-icon d-none" id="hambar">☰</div>
+      <nav class="nav-boxer d-flex self-center M-sidebar" style="border: 1px rgba(83, 82, 82, 0.5) solid; padding: 8px 2em; border-radius: 16px; gap: 20px;">
+        <div>
+          <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeSidebar()">×</a>
+        </div>
+        <a href="index.html" class="nav-link no-dec">Home</a>
+        <a href="service_test.html" class="nav-link no-dec">Services</a>
+        <a href="about.html" class="nav-link no-dec">About</a>
+        <a href="contact.html" class="nav-link no-dec ">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero-boxer d-flex flex-y n-center" style="height: 85vh; gap: 1.4em; padding-top: 6.9em;">
+    <div>
+      <h1 class="crystal-typog logo">Web Cubixs</h1>
+    </div>
+    <div class="ContentBoxer">
+      <p style="font-size: 1.2em" class="HeroContent subtext opac-8">
+        Lorem ipsum dolor sit amet consectetur adipisicing elits.
+      </p>
+    </div>
+    <div class="cta-boxer" style="margin-top: .85em;">
+      <div class="d-flex flex-jc-center">
+        <a href="#">
+          <button type="button" class="cta-button fw-500">
+            Let's Connect
+            <svg class="pos-relative fw-500 bi bi-arrow-up-right" style="top: 2px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" viewBox="0 0 16 16">
+              <path style="font-weight: inherit" fill-rule="evenodd"
+                d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+            </svg>
+          </button>
+          <div class="btn-underline motion"></div>
+        </a>
+      </div>
+    </div>
+    <div class="d-flex flex-jc-bw flex-a-center socials-boxer self-center social-icon social-motionable" style="width: 180px; margin-top: 12px">
+      <a href="#">
+        <img src="/Media/Icons/Socials/linkedin.png" alt="linkedin" title="linkedin" height="20px" width="20px"
+          style="filter: brightness(0) invert(0.8)" />
+      </a>
+      <span class="vertic-line"></span>
+      <a href="#">
+        <img src="/Media/Icons/Socials/github.png" alt="github" title="github" height="22px" width="22px"
+          style="filter: invert(0.95)" />
+      </a>
+      <span class="vertic-line"></span>
+      <a href="#">
+        <img src="/Media/Icons/Socials/facebook.png" alt="facebook" title="facebook" height="20px" width="20px"
+          style="filter: brightness(0) invert(0.8)" />
+      </a>
+    </div>
+    <!-- <div class="Chevron" id="chevron" style="margin-top: 1.25em">
+      <img src="/Media/Icons/down-arrow.png" alt="down-arrow" title="down" width="32px" height="32px"
+        style="filter: brightness(50%) invert(0.8)" />
+    </div> -->
+  </div>
+  
+  <section style="margin-top: 1.5rem;">
+    <div class="d-flex flex-a-center flex-jc-ar flex-wrap M-code-boxer" style="color: rgb(223, 223, 223); margin-inline: 1em; gap: 20px 10px;" >
+      <div class="col1 base-4">
+        <h3 class="fw-700" style="margin-bottom: 1em; font-size: 28px; opacity: .9">
+          We Value the Web designing and Code Integrity.
+        </h3>
+        <p style="line-height: 24px;">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sint
+          omnis dolorum autem unde cupiditate, deleniti esse numquam debitis
+          excepturi doloribus. Quas nisi mollitia porro neque numquam!
+          Nesciunt, voluptatum rerum?
+        </p>
+      </div>
+      <div class="col2 overflow-hide" style="width: 480px; border: 1px solid #aaa;box-shadow: -1px -1px 15px rgba(255, 255, 255, 0.3), 1px 1px 15px rgba(0, 0, 0, 0.4); border-radius: 10px;">
+        <img src="/Media/Img/code.jpg" alt="code-image" class="fit-cover" style="opacity: 0.88; width: 100%; height: 100%;" />
+      </div>
+    </div>
+  </section>
+
+    <!-- S E R V I C E  S  E  C -->
+  <section class="srcv-offer-wrapper">
+    <div class="d-flex n-left flex-controller-sm flex-controller-md" style="margin-bottom: 2em;">
+      <div class="Heading" style=" font-size: 3.85rem;  letter-spacing: 0.6px;  background: linear-gradient(to top, #c0bebe, #e6e0e0, #c0c0c0);  -webkit-background-clip: text;  -webkit-text-fill-color: transparent;  font-size: 1.4em !important;  margin-inline: 1.4em;">
+        <h2 class="line-giver srvc-offer-main-title">Services We Offer</h2>
+      </div>
+    </div>
+
+    <div class="srvc-offer-boxer d-flex overflow-hide pos-relative">
+      <div class="srvc-offer-box srvc-offer-box1">
+        <ul>
+          <li class="ls-none"><a href="#" data-file="ui.html" class="active">UI/UX</a></li>
+          <li class="ls-none"><a href="#" data-file="seo.html">SEO</a></li>
+          <li class="ls-none"><a href="#" data-file="web_develop.html">Web Development</a></li>
+          <li class="ls-none"><a href="#" data-file="web_management.html">Website Management</a></li>
+        </ul>
+      </div>
+      <div class="srvc-offer-box srvc-offer-box2">
+        <div class="content" id="content-area">
+          <h3 class="title" style="font-size: 1.82em;">UI/UX</h3>
+          <p class="para" style="line-height: 1.7em; margin-block: 1em;">We specialize in creating digital products that are visually appealing, user-centric, and
+            conversion-driven. Our UI/UX design process is grounded in research, guided by best practices, and tailored
+            to your
+            business goals.</p>
+          <p><b style="opacity: .9;">Our UI/UX services include:</b></p>
+          <ul class="list-boxer" style="padding-left: 20px;">
+            <li class="list-item ls-none">User research and persona development</li>
+            <li class="list-item ls-none">Wireframing and prototyping</li>
+            <li class="list-item ls-none">Responsive interface design</li>
+            <li class="list-item ls-none">Design system creation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="process-flow n-center" style="opacity: .95; padding: 60px 0px; margin-top: 2.5em;">
+      <h2 style="margin-bottom: 2em; font-size: 2.1em;" class="crystal-typog">Our Working Process</h2>
+      <div class="flow-boxer flow-card-boxer d-flex flex-jc-ar">
+        <div class="flow-card">
+
+          <div class="flow-card-header d-flex flex-a-center flex-y">
+            <img src="Media/Icons/content-management.png" alt="" class="d-in-block" style="filter: invert(0.95)" />
+            <p>
+              <span class="StepCount">Step 1</span>
+            </p>
+            <h4 class="StepTitle bold-600">Understand your business goals</h4>
+          </div>
+
+          <div class="flow-card-body d-flex flex-jc-center">
+            <p>We notedown all the objectives of your business and do requirement analysis which helps us to craft the
+              web design.</p>
+          </div>
+
+        </div>
+        <div class="flow-card">
+
+          <div class="flow-card-header d-flex flex-a-center flex-y">
+            <img src="Media/Icons/web-design.png" alt="" class="d-in-block" style="filter: invert(0.15)" />
+            <p>
+              <span class="StepCount">Step 2</span>
+            </p>
+            <h4 class="StepTitle bold-600">Web Designing</h4>
+          </div>
+
+          <div class="flow-card-body d-flex flex-jc-center">
+            <p>We design the structure, create wireframes, color analysis, and logic designing to the web.</p>
+          </div>
+        </div>
+        <div class="flow-card">
+
+          <div class="flow-card-header d-flex flex-a-center flex-y">
+            <img src="Media/Icons/code_color.png" alt="" class="d-in-block" style="filter: invert(0.25)" />
+            <p>
+              <span class="StepCount">Step 3</span>
+            </p>
+            <h4 class="StepTitle bold-600">Development</h4>
+          </div>
+
+          <div class="flow-card-body d-flex flex-jc-center">
+            <p>The require desings or wireframes are developed. </p>
+          </div>
+        </div>
+        <div class="flow-card">
+
+          <div class="flow-card-header d-flex flex-a-center flex-y">
+            <img src="Media/Icons/testing.png" alt="" class="d-in-block" style="filter: invert(0.1)" />
+            <p>
+              <span class="StepCount">Step 4</span>
+            </p>
+            <h4 class="StepTitle bold-600">Web Testing</h4>
+          </div>
+
+          <div class="flow-card-body d-flex flex-jc-center">
+            <p>Testing the website such as browser compatibility test, correcting targeting of links, authentication
+              test, etc. </p>
+          </div>
+        </div>
+        <div class="flow-card">
+
+          <div class="flow-card-header d-flex flex-a-center flex-y">
+            <img src="Media/Icons/start-up.png" alt="" class="d-in-block" style="filter: invert(0.95)" />
+            <p>
+              <span class="StepCount">Step 5</span>
+            </p>
+            <h4 class="StepTitle bold-600">Deployment</h4>
+          </div>
+
+          <div class="flow-card-body d-flex flex-jc-center">
+            <p>You site is now ready to delploy and launch on the internet! </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="foot-row1 d-flex" style="gap: 1.5em; padding-bottom: 1.5rem; padding-top: 2rem;margin-block: .8em;">
+      <div class="foot-box foot-box1">
+        <div>
+          <div class="d-flex flex-a-center flex-jc-centser" style="margin-bottom: 1em; gap: .5em;">
+            <img src="Media/logo.png" alt="logo" class="fit-cover" style="height: 44px; width: 40px;">
+            <h6 class="crystal-typog" style="font-size: 1.5em;">Web Cubixs</h6>
+          </div>
+        </div>
+        <div style="margin-left: 0;">
+          <div class="d-flex flex-jcj-center flex-wrap">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, sed.</p>
+          </div>
+          <div class="d-none flex-a-center flex-jc-center social-motionable" style="gap: 1.5em; margin-top: 3em; ">
+            <a href="#">
+              <img src="/Media/Icons/Socials/facebook.png" alt="facebook" title="facebook" height="20px" width="20px"
+                style="filter: brightness(0) invert(0.8)" />
+            </a>
+            <a href="#">
+              <img src="/Media/Icons/Socials/instagram.png" alt="instagram" title="instagram" height="18px" width="18px"
+                style="filter: brightness(0) invert(0.8)" />
+            </a>
+            <a href="#">
+              <img src="/Media/Icons/Socials/linkedin.png" alt="linkedin" title="linkedin" width="20px" height="20px"
+                style="filter: brightness(0) invert(0.8)" />
+            </a>
+            <a href="#">
+              <img src="/Media/Icons/Socials/github.png" alt="github" title="github" height="26px" width="26px"
+                style="filter: invert(0.95)" />
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="foot-box foot-box2" style="flex-grow: 1; margin-left: 10rem;">
+        <h6 style="opacity: .85; font-size: 1.2em;">Navigation</h6>
+        <ul class="d-flex flex-y" style="gap: .8rem; margin-top: .9em;">
+          <li class="ls-none"><a href="" class="nav-link no-dec">Home</a></li>
+          <li class="ls-none"><a href="" class="nav-link no-dec">Services</a></li>
+          <li class="ls-none"><a href="" class="nav-link no-dec">About</a></li>
+          <li class="ls-none"><a href="" class="nav-link no-dec">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="foot-row2 d-flex flex-a-center flex-jc-bw flex-wrap" style="padding-block: 2rem; border-top: 1px #aaa solid;">
+      <div><p class="f-14px"> &copy; 2025 Web Cubixs, all rights reserved.</p></div>
+      <div class="d-flex flex-a-center flex-jc-center social-motionable" style="gap: 1em;">
+        <a href="#">
+          <img src="/Media/Icons/Socials/facebook.png" alt="facebook" title="facebook" height="16px" width="16px"
+            style="filter: brightness(0) invert(0.8)" />
+        </a>
+        <!-- <a href="#">
+          <img src="/Media/Icons/Socials/instagram.png" alt="instagram" title="instagram" height="18px" width="18px"
+            style="filter: brightness(0) invert(0.8)" />
+        </a> -->
+        <a href="#">
+          <img src="/Media/Icons/Socials/linkedin.png" alt="linkedin" title="linkedin" width="16px" height="16px"
+            style="filter: brightness(0) invert(0.8)" />
+        </a>
+        <a href="#">
+          <img src="/Media/Icons/Socials/github.png" alt="github" title="github" height="20px" width="20px"
+            style="filter: invert(0.95)" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script src="JS/chevron.js"></script>
+  <script src="JS/img_resize.js"></script> -->
+  <script src="JS/serviceOffer.js"></script>
+  <script src="JS/navSlider.js"></script>
+</body>
+
+</html>

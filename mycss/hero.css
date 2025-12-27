@@ -1,0 +1,176 @@
+/* ..... H E R O Section .... */
+
+.crystal-typog {
+  font-size: 3.85rem;
+  letter-spacing: 0.6px;
+  background: linear-gradient(to top, #c0bebe, #e6e0e0, #c0c0c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* setting all font to unset  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: unset;
+}
+
+.cta-button {
+  position: relative;
+  all: unset;
+  outline: none;
+  margin-top: 0.4em;
+  padding: 8px 32px;
+  background-color: #111419; /* old cta color *?
+  /* background-color: #0d0f14; */
+  color: whitesmoke;
+  border: 1px rgba(83, 82, 82, 0.5) solid;
+  border-radius: 4px;
+  font-size: 1.15em;
+  letter-spacing: 0.8px;
+}
+
+.btn-underline {
+  height: 1.2px;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  left: 25%;
+  right: 25%;
+  transition: all 0.4s ease-in;
+  /* box-shadow: 1.5px 0px 1px 0.1px whitesmoke, -1.5px 0px 1px 0.1px whitesmoke; */
+  box-shadow: 1px 0px 0px 0px whitesmoke, -1px 0px 1px 0px whitesmoke;
+  background: linear-gradient(to right, #c0bebe, #f5f5f5, #c0c0c0);
+}
+
+a:hover .btn-underline {
+  left: 0%;
+  right: 0%;
+  width: 100%;
+  box-shadow: none;
+}
+
+.social-motionable a {
+  transition: all 0.22s ease-out;
+}
+.social-motionable a:hover {
+  filter: invert(1) brightness(90%);
+}
+.social-motionable .vertic-line {
+  width: 1.82px;
+  height: 20px;
+  display: inline-block;
+  background-color: rgba(83, 82, 82, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+  .cta-button {
+    font-size: 16px;
+  }
+  
+}
+
+/* --- Flow Card Section ---  */
+
+.flow-card-boxer {
+  column-gap: 4px;
+  row-gap: 1rem;
+  -moz-column-gap: 4px;
+  margin-inline-start: 1em;
+}
+
+.flow-card-boxer .flow-card {
+  flex-basis: 19%;
+  /* max-width: 360px; */
+  min-height: 320px;
+  padding: 16px 8px;
+  border-radius: 12px;
+  /* background: rgba(255, 255, 255, 0.05); */
+  background: linear-gradient(145deg, #1c1f26, #2a2e35);
+  /* backdrop-filter: blur(10px); */
+}
+
+.flow-card .flow-card-header {
+  row-gap: 20px;
+}
+.flow-card .flow-card-header img {
+  width: 60px;
+  height: 60px;
+}
+.flow-card-body {
+  margin-top: 1em;
+}
+.flow-card-body p {
+  line-height: 1.6em;
+}
+
+@media screen and (max-width: 991px) {
+  .flow-card-boxer {
+    flex-wrap: wrap;
+  }
+  .flow-card {
+    min-height: 290px !important;
+    flex-basis: 42.5% !important;
+    padding-inline: 1.5em !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .flow-card {
+    flex-basis: 95% !important;
+    min-height: 240px !important;
+  }
+}
+
+/* --- code section ---  */
+
+@media screen and (max-width: 902px) {
+  .M-code-boxer .col1 {
+    flex-basis: 90%;
+  }
+  .M-code-boxer img {
+    max-width: 579px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .M-code-boxer .col1, .M-code-boxer .col2 {
+    flex-basis: 90%;
+  }
+  .M-code-boxer h3 {
+    font-size: 24px !important;
+  }
+}
+/* --- footer ---  */
+
+footer {
+  padding-inline: 3rem;
+  background-color: rgb(4, 7, 5);
+}
+footer a {
+  color: #aaa;
+}
+footer p {
+  color: #ccc;
+}
+
+@media screen and (max-width: 573px) {
+
+  footer a {
+    font-size: 14.5px;
+  }
+  .foot-row1 {
+    flex-wrap: wrap;
+  }
+  .foot-box1 {
+    min-width: 187px;
+  }
+  .foot-box2 {
+    margin-left: 0em !important;
+  }
+  .foot-row2 {
+    gap: 1em;
+  }
+}

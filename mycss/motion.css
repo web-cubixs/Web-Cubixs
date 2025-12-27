@@ -1,0 +1,59 @@
+
+.hero-boxer {
+  position: relative;
+  /* background: #0b0e12; */
+  overflow: hidden;
+}
+
+/* this one below code infinite move  */
+/* ✨ Animated crystal glow layer */
+.hero-boxer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      circle at 30% 30%,
+      rgba(192, 190, 190, 0.15),
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at 70% 70%,
+      rgba(230, 224, 224, 0.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(192, 192, 192, 0.08),
+      transparent 40%
+    );
+  background-size: 200% 200%;
+  animation: heroIntro 1.5s ease-out forwards,
+    heroFlow 18s ease-in-out 1.5s infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ⚡ Fast Intro Motion — runs once */
+@keyframes heroIntro {
+  0% {
+    background-position: 0% 0%, 100% 100%, 50% 50%;
+    opacity: 0;
+  }
+  100% {
+    background-position: 100% 100%, 0% 0%, 50% 50%;
+    opacity: 1;
+  }
+}
+
+/* 🌌 Continuous subtle drift — infinite loop */
+@keyframes heroFlow {
+  0% {
+    background-position: 100% 100%, 0% 0%, 50% 50%;
+  }
+  50% {
+    background-position: 0% 50%, 100% 50%, 60% 40%;
+  }
+  100% {
+    background-position: 100% 100%, 0% 0%, 50% 50%;
+  }
+}

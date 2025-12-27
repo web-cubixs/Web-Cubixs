@@ -1,0 +1,132 @@
+:root {
+  --old-bk-body: #090b0c;
+  --bk-header: #0d0f14;
+  --bk-body: #0b0e12;
+  --whitesmoke: whitesmoke;
+  --main-white: rgb(223, 223, 223);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  border: none;
+}
+
+a,
+body {
+  color: var(--whitesmoke);
+}
+body {
+  background: var(--old-bk-body);
+  font-family: sans-serif;
+}
+
+/* header {
+  background-color: var(--bk-header);
+} */
+.nav {
+  align-self: center;
+  border: 1px rgba(83, 82, 82, 0.5) solid;
+  padding: 8px 2em;
+  border-radius: 16px;
+  gap: 20px;
+}
+.nav-boxer {
+  transition: width 0.3s ease;
+}
+.nav-boxer .nav-link {
+  color: var(--main-white);
+  opacity: 0.95;
+  /* transition: all 3s ease; */
+}
+
+@media screen and (max-width: 600px) {
+
+
+  h1.logo {
+    font-size: 48px;
+  }
+  .subtext {font-size: 1.05em;}
+  .logo-boxer {
+    left: 16px !important;
+  }
+  /* header {
+    padding-right: 1em;
+  } */
+  .closebtn {
+    display: block !important;
+  }
+  .header-boxer {
+    justify-content: flex-end !important;
+    /* border-bottom: 0 !important; */
+  }
+
+  .nav-boxer {
+    width: 0px;
+    padding: 0px !important;
+    height: 100vh;
+  }
+
+  .menu-icon {
+    display: block !important;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(218, 212, 212);
+  }
+  .nav-boxer {
+    position: fixed;
+    z-index: 2;
+    top: 58px;
+    right: 0px;
+    flex-direction: column !important;
+    background: rgb(17, 20, 25);
+    border-radius: 6px !important;
+    padding-top: 10rem;
+    border: 0px !important;
+    padding-top: 2em !important;
+    margin-top: 1rem;
+  }
+  .nav-boxer a:hover {
+    background: linear-gradient(145deg, #1c1f26, #2a2e35);
+  }
+
+  .nav-boxer > .nav-link {
+    padding-inline: 12px;
+    text-align: center;
+  }
+  .nav-boxer > .nav-link:not(:first-child) {
+    padding-block: 8px;
+  }
+  .nav-boxer .nav-link:last-child {
+    border-bottom: 1px solid #222;
+  }
+
+}
+
+.closebtn {
+  display: none;
+  position: absolute;
+  font-size: 0;
+  top: 4px;
+  right: 20px;
+  color: silver;
+}
+
+.closebtn.active {
+  display: block;;
+  transition: font-size 0.3s ease;
+  font-size: 36px;
+}
+
+.M-sidebar {
+  /* width: 0px; */
+  transition: width 0.3s ease;
+}
+.M-sidebar.M-sidebar-active {
+  transition: width 0.3s ease;
+  width: 214px !important;
+}
