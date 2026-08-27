@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>WebCubixs | Professional Websites for Businesses</title>
+    <meta name="title" content="WebCubixs | Professional Websites for Businesses" />
+    <meta name="description" content="We design and build modern, fast and professional websites that help businesses look credible, attract customers and turn visitors into clients." />
+    <meta name="keywords" content="web development, business websites, website redesign, digital agency, UAE web development, Saudi Arabia web design, Qatar, Kuwait, Pakistan, modern web design" />
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://webcubixs.com/" />
+    <meta property="og:title" content="WebCubixs | Professional Websites for Businesses" />
+    <meta property="og:description" content="We design and build modern, fast and professional websites that help businesses look credible, attract customers and turn visitors into clients." />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://webcubixs.com/" />
+    <meta property="twitter:title" content="WebCubixs | Professional Websites for Businesses" />
+    <meta property="twitter:description" content="We design and build modern, fast and professional websites that help businesses look credible, attract customers and turn visitors into clients." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Theme init script to prevent flashing -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('webcubixs_theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = saved || (prefersDark ? 'dark' : 'light');
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+          } else {
+            document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-white dark:bg-[#05070c] text-neutral-900 dark:text-neutral-100 antialiased selection:bg-cyan-500 selection:text-white transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
